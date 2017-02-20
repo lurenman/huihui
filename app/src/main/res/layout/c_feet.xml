@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+    <include layout="@layout/c_blackline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/app_feet_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/app_feet_discover"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/feet_discover_a"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/feet_discover_a" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="发现"
+                android:textSize="@dimen/fonta" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_feet_activity"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/feet_activity_a"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/feet_activity_a" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="现场"
+                android:textSize="@dimen/fonta" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_feet_card"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/feet_card_a"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/feet_card_a" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="名片"
+                android:textSize="@dimen/fonta" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_feet_my"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/feet_my_a"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/feet_my_a" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="我的"
+                android:textSize="@dimen/fonta" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

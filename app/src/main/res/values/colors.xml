@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#0099FF</color><!-- APP Title color was 303F9F-->
+    <color name="colorAccent">#111111</color><!-- Edittext input text underline color-->
+    
+    
+    <color name="appColor">#0099FF</color>
+    <color name="appComponentColor">#0099FF</color>
+    <color name="fontcolor">#2D839F</color>
+
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="biz_audio_progress_bg">#00b2ff</color>
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+
+
+    <color name="textcolor_white">#ffffffff</color>
+    <color name="textcolor_light_dark">#ffc0c0c0</color>
+    <color name="bg_color">#ffc0c0c0</color>
+    <color name="the_line_color">#ffc0c0c0</color>
+    <color name="textcolor_dark">#111111</color>
+
+    <!-- ios dialog-->
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+</resources>

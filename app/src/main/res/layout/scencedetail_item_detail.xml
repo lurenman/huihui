@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/scencedetail_targetLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/scencedetail_targetLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/scencedetail_feet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/c_blackline"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/scencedetail_feet_contect"
+            android:layout_height="match_parent"
+            android:layout_width="80dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/scencedetail_phone"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系"
+                android:textSize="@dimen/fontd"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:background="#AEAEAE"/>
+        <LinearLayout
+            android:id="@+id/scencedetail_feet_collect"
+            android:layout_height="match_parent"
+            android:layout_width="89dp">
+            <ImageView
+                android:id="@+id/scencedetail_feet_collect_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/scencedetail_collecta"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/scencedetail_feet_collect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏"
+                android:textSize="@dimen/fontd"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:background="#AEAEAE"/>
+        <TextView
+            android:id="@+id/scencedetail_feet_sign"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#0099FF"
+            android:text="签到"
+            android:textSize="@dimen/fontd"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/scencedetail_feet"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/scencedetail_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#0099FF"/>
+            <TextView
+                android:id="@+id/scencedetail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scencedetail_image"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+                android:textSize="@dimen/fontc" />
+
+            <TextView
+                android:id="@+id/scencedetail_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/scencedetail_title"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="隔着这么远~~~"
+                android:textSize="@dimen/fonta" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_a"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/scencedetail_distance"
+                android:layout_marginTop="10dp">
+
+                <include layout="@layout/c_blackline" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/scencedetail_clock"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/scencedetail_a"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/home_item_clock" />
+
+            <TextView
+                android:id="@+id/scencedetail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/scencedetail_clock"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/scencedetail_clock"
+                android:gravity="center|left"
+                android:text="2016年即将过去了"
+                android:textSize="@dimen/fontb" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_b"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/scencedetail_date"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_c"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/scencedetail_b">
+                <include layout="@layout/c_blackline" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/scencedetail_location"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/scencedetail_c"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/home_item_location" />
+
+            <TextView
+                android:id="@+id/scencedetail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_alignTop="@id/scencedetail_location"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/scencedetail_location"
+                android:gravity="center|left"
+                android:text="这里是美丽的杭州"
+                android:textSize="@dimen/fontb" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_d"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/scencedetail_address"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_e"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/scencedetail_d">
+
+                <include layout="@layout/c_blackline" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/scencedetail_person"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/scencedetail_e"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ticket_person" />
+
+            <TextView
+                android:id="@+id/scencedetail_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_alignTop="@id/scencedetail_person"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/scencedetail_person"
+                android:gravity="center|left"
+                android:text="这么多人报名了"
+                android:textSize="@dimen/fontb" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_f"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/scencedetail_person"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_g"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/scencedetail_f">
+
+                <include layout="@layout/c_blackline" />
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/scencedetail_host_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/imageview_bg"
+                android:layout_below="@id/scencedetail_g"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/scencedetail_host_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontc"
+                android:text="管理员"
+                android:layout_alignTop="@id/scencedetail_host_image"
+                android:layout_toRightOf="@id/scencedetail_host_image"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/scencedetail_host_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontb"
+                android:text="公司：宇宙管理委员会"
+                android:layout_below="@id/scencedetail_host_name"
+                android:layout_alignLeft="@id/scencedetail_host_name"
+                android:layout_marginTop="2dp" />
+            <TextView
+                android:id="@+id/scencedetail_host_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontb"
+                android:text="电话：18888888888"
+                android:layout_below="@id/scencedetail_host_company"
+                android:layout_alignLeft="@id/scencedetail_host_name"
+                android:layout_marginTop="2dp" />
+
+            <ImageView
+                android:id="@+id/scencedetail_host_attention"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/scencedetail_host_image"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/scencedetail_host_attentiona"/>
+
+            <LinearLayout
+                android:id="@+id/scencedetail_h"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/scencedetail_host_image"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/scencedetail_i"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/scencedetail_h">
+                <include layout="@layout/c_blackline" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scencedetail_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情介绍"
+                android:textSize="@dimen/fontc"
+                android:layout_below="@id/scencedetail_i"
+                android:layout_alignLeft="@id/scencedetail_host_image"
+                android:layout_marginTop="22dp" />
+            <WebView
+                android:id="@+id/scencedetail_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scencedetail_introduction"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="15dp"-->
+                <!--android:gravity="start"-->
+                <!--android:layout_below="@id/scencedetail_introduction"-->
+                <!--android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"/>-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

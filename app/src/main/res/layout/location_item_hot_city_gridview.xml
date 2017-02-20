@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_edittext_bg">
+    <!--android:background="#F3F3F3">-->
+
+    <TextView
+        android:id="@+id/tv_hot_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/fontb"
+        android:textColor="#5c5c5c"/>
+</RelativeLayout>
+
+    <!--android:background="?android:attr/selectableItemBackground"-->

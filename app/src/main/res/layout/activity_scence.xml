@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Scence.ScenceActivity"
+    android:background="#FFFFFF">
+
+    <include
+        android:id="@+id/app_feet"
+        layout="@layout/c_feet" />
+    
+    <TextView
+        android:id="@+id/scene_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="现场"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="@dimen/fontd"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/scene_title"
+        android:orientation="vertical">
+        <include layout="@layout/c_blackline" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/scence_search"
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:layout_below="@id/scene_title"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/search_edittext_bg">
+        <ImageView
+            android:id="@+id/scence_search_image"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"/>
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/scence_search_image"
+            android:gravity="start"
+            android:background="@null"
+            android:textCursorDrawable="@null"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scence_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_below="@id/scence_search">
+        <TextView
+            android:id="@+id/scence_currentdate"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:text="--/--"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/fontd" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scence_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scence_current"
+        android:layout_above="@id/app_feet">
+        <LinearLayout
+            android:id="@+id/scence_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aboutus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hui2020.huihui.Personal.Setting.AboutusActivity">
+
+    <RelativeLayout
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+        <include
+            android:id="@+id/back"
+            layout="@layout/c_back" />
+
+        <TextView
+            style="@style/titletext"
+            android:text="关于我们" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:src="@drawable/aboutus_logo"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:gravity="start"
+        android:textSize="@dimen/fontb"
+        android:text="        会会(杭州会会科技有限公司)—专业的商务会议查询、报名的票务营销平台，为主办方提供免费活动发布、会议营销推广、会议现场互动、会后舆情报告、会议嘉宾邀约等服务的会议营销第三方平台。
+        会会不只满足活动参加人求知若渴的欲望，还可以让主办方，在这里找到精准的参会人，我们更是将办活动所需要的资源打通提供一连串的服务。"
+        android:layout_height="180dp" />
+    <include layout="@layout/c_blackline"/>
+    <RelativeLayout
+        android:id="@+id/aboutus_website"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="官方网站"
+            android:textSize="@dimen/fontc"
+            android:textColor="#7F7F7F"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="www.hui2020.com"
+            android:textSize="@dimen/fontb"
+            android:textColor="#C6C6C6"/>
+    </RelativeLayout>
+    <include layout="@layout/c_blackline"/>
+
+    <RelativeLayout
+        android:id="@+id/aboutus_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="关注微信"
+            android:textSize="@dimen/fontc"
+            android:textColor="#7F7F7F"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="会会科技"
+            android:textSize="@dimen/fontb"
+            android:textColor="#C6C6C6"/>
+    </RelativeLayout>
+    <include layout="@layout/c_blackline"/>
+
+    <RelativeLayout
+        android:id="@+id/aboutus_support"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="技术支持"
+            android:textSize="@dimen/fontc"
+            android:textColor="#7F7F7F"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="0571-56090977"
+            android:textSize="@dimen/fontb"
+            android:textColor="#C6C6C6"/>
+    </RelativeLayout>
+    <include layout="@layout/c_blackline"/>
+
+</LinearLayout>

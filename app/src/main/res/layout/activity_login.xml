@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Login.LoginActivity">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:placeholderImage="@drawable/login_background"
+        fresco:placeholderImageScaleType="fitXY"/>
+
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/login_logo"/>
+
+    <EditText
+        android:id="@+id/login_number_text"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:hint="输入您的手机号"
+        android:inputType="number"
+        android:textSize="@dimen/fontc"
+        android:paddingLeft="10dp"
+        android:gravity="center|left"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:layout_below="@id/login_logo"
+        android:textColor="#DDFFFFFF"
+        android:textColorHint="#88FFFFFF"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/textview_bg_g"/>
+
+    <EditText
+        android:id="@+id/login_password_text"
+        android:textCursorDrawable="@null"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_number_text"
+        android:layout_marginTop="8dp"
+        android:hint="请输入您的密码"
+        android:paddingLeft="10dp"
+        android:textColorHint="#88FFFFFF"
+        android:textColor="#DDFFFFFF"
+        android:textSize="@dimen/fontc"
+        android:inputType="textPassword"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:background="@drawable/textview_bg_g"/>
+
+    <TextView
+        android:id="@+id/login_confirme"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:text="登  录"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="@dimen/fontd"
+        android:background="@drawable/textview_bg_b_half"
+        android:layout_below="@id/login_password_text"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="注册"
+        android:textSize="@dimen/fontb"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:id="@+id/login_registe" />
+
+    <TextView
+        android:id="@+id/login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="忘记密码?"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="@dimen/fontb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp" />
+
+</RelativeLayout>

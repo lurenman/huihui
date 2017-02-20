@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.SearchActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include layout="@layout/c_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="36dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:text="搜索"
+            android:gravity="center"
+            android:textSize="@dimen/fontc"
+            android:textColor="@color/fontcolor"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_toRightOf="@id/back"
+            android:layout_toLeftOf="@id/search"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_edittext_bg">
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"/>
+            <EditText
+                android:layout_marginLeft="4dp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/search_image"
+                android:gravity="start"
+                android:id="@+id/search_text"
+                android:background="@null"
+                android:textCursorDrawable="@null"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/c_blackline" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="     搜索"
+        android:gravity="center|left"
+        android:textSize="@dimen/fontc"/>
+    <!--建立新的LinearLayout，左右padding20dp，下padding10dp，然后往上面放TextView，右padding10dp，测量距离不够就建立新的LinearLayout-->
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.MeetDetail.MeetingdetailTActivity">
+
+    <RelativeLayout
+        android:id="@+id/meetingdetail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include layout="@layout/c_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            style="@style/titletext"
+            android:text="会议详情" />
+
+        <ImageView
+            android:id="@+id/menu"
+            style="@style/titledot" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/meetingdetail_feet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+
+
+        <RelativeLayout
+            android:id="@+id/meetingdetail_feet_collect"
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/meetingdetail_feet_collect_image"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:src="@drawable/collect_a" />
+
+            <TextView
+                android:id="@+id/meetingdetail_feet_collect_text"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="收藏"
+                android:textSize="@dimen/fontd" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/meetingdetail_feet_join"
+            android:layout_width="fill_parent"
+            android:layout_toRightOf="@id/meetingdetail_feet_collect"
+            android:layout_height="50dp"
+            android:background="#0099FF"
+            android:layout_alignParentRight="true"
+            android:text="立即参加"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fontd"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meetingdetail"
+        android:layout_above="@id/meetingdetail_feet">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/meetingdetail_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#0099FF"/>
+            <TextView
+                android:id="@+id/meetingdetail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+                android:textSize="@dimen/fontc" />
+            <TextView
+                android:id="@+id/meetingdetail_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="隔着这么远~~~"
+                android:textSize="@dimen/fonta" />
+            <include layout="@layout/c_blackline"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp">
+
+            </RelativeLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

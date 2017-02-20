@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_suggestion"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Personal.Setting.SuggestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include layout="@layout/c_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="客户反馈"
+            android:textSize="@dimen/fontd"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/suggestion_content_bg"
+
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <EditText
+            android:hint="留下您的宝贵的意见......"
+            android:id="@+id/et_content"
+            android:background="@null"
+            android:textSize="@dimen/textsize_moddle"
+            android:textColor="#333333"
+            android:gravity="top|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <EditText
+
+        android:id="@+id/ed_qq_number"
+        android:padding="5dp"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:hint="请输入你的qq号码"
+        android:layout_margin="10dp"
+        android:background="@drawable/suggestion_content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/btn_commit"
+        android:text="提交"
+        android:textSize="12sp"
+        android:textColor="@color/textcolor_white"
+        android:layout_margin="10dp"
+        android:background="@drawable/suggestion_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+</LinearLayout>

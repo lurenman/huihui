@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal.Setting.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/c_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fontd" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/setting_title"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/setting_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="关于我们"
+                android:textSize="@dimen/fontb" />
+
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/setting_recommend"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="13dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="推荐好友"-->
+                <!--android:textSize="@dimen/fontb" />-->
+
+            <!--<ImageView-->
+                <!--style="@style/arraytoright"-->
+                <!--android:src="@drawable/go_g" />-->
+        <!--</RelativeLayout>-->
+        <!--<include layout="@layout/c_blackline" />-->
+
+        <RelativeLayout
+            android:id="@+id/setting_wechatpublic"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="微信公众号"
+                android:textSize="@dimen/fontb" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="46dp"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:text="会会科技"
+                android:textSize="@dimen/fontb" />
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+
+        <RelativeLayout
+            android:id="@+id/setting_onlinehelp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="在线帮助"
+                android:textSize="@dimen/fontb" />
+
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+
+        <RelativeLayout
+            android:id="@+id/setting_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="意见反馈"
+                android:textSize="@dimen/fontb" />
+
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/setting_cleancache"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="清除缓存"
+                android:textSize="@dimen/fontb" />
+
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+
+        <RelativeLayout
+            android:id="@+id/setting_version"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="版本更新"
+                android:textSize="@dimen/fontb" />
+
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+
+        <RelativeLayout
+            android:id="@+id/setting_exit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textSize="@dimen/fontb" />
+
+            <ImageView
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+        <include layout="@layout/c_blackline" />
+    </LinearLayout>
+</RelativeLayout>
+

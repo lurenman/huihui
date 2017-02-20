@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Card.CardActivity">
+
+    <RelativeLayout
+        android:id="@+id/card_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include layout="@layout/c_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="名片"
+            android:textSize="@dimen/fontd"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/app_feet"
+        layout="@layout/c_feet" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/card_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/card_title"
+        app:tabIndicatorColor="@color/appComponentColor"
+        app:tabSelectedTextColor="@color/appComponentColor"
+        app:tabTextColor="#000000"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/card_view"
+        android:layout_below="@id/card_tab"
+        android:layout_above="@id/app_feet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

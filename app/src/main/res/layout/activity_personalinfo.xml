@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personalinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Personal.PersonalinfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/personalinfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/c_back" />
+
+        <TextView
+            style="@style/titletext"
+            android:text="我的名片" />
+
+        <ImageView
+            android:id="@+id/personalinfo_share"
+            android:background="@drawable/share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/personalinfo_change"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/appComponentColor"
+        android:gravity="center"
+        android:text="修改名片"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/fontc" />
+
+
+
+    <ScrollView
+        android:layout_below="@id/personalinfo"
+        android:layout_above="@id/personalinfo_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:background="#1D2F46">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/personalinfo_cardbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:actualImageScaleType="fitXY"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+
+
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/personalinfo_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    fresco:placeholderImage="@drawable/personal_icon"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:roundedCornerRadius="5dp" />
+                <TextView
+                    android:id="@+id/personalinfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/personalinfo_head"
+                    android:layout_alignRight="@id/personalinfo_head"
+                    android:layout_below="@id/personalinfo_head"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="管理员"
+                    android:textSize="@dimen/fontc"
+                    android:textColor="#FFFFFF"/>
+                <ImageView
+                    android:id="@+id/personalinfo_gender"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignTop="@id/personalinfo_name"
+                    android:layout_alignRight="@id/personalinfo_head"
+                    android:src="@drawable/personalinfo_gender_man"/>
+                <TextView
+                    android:id="@+id/personalinfo_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/personalinfo_head"
+                    android:layout_alignRight="@id/personalinfo_head"
+                    android:layout_below="@id/personalinfo_name"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="CEO"
+                    android:textSize="@dimen/fontb"
+                    android:textColor="#FFFFFF"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@id/personalinfo_head"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="15dp">
+                    <TextView
+                        android:id="@+id/personalinfo_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fontc"
+                        android:text="宇宙时空管理集团"
+                        android:textColor="#FFFFFF"/>
+                    <RelativeLayout
+                        android:id="@+id/personalinfo_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/personalinfo_phone_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fontc"
+                        android:text="电话：18888888888"
+                        android:textColor="#FFFFFF"/>
+                        <ImageView
+                            android:id="@+id/personalinfo_phone_dir"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/contact_number"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/personalinfo_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fontc"
+                        android:text="邮箱：10086@qq.com"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/personalinfo_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fontc"
+                        android:text="网址：www.hui2020.com"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/personalinfo_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fontc"
+                        android:text="QQ：10086"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/personalinfo_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fontc"
+                        android:text="微信：10086"
+                        android:textColor="#FFFFFF"/>
+                    <RelativeLayout
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/personalinfo_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/personalinfo_address_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/fontc"
+                            android:text="地址：银河系街道办事处"
+                            android:textColor="#FFFFFF"/>
+                        <ImageView
+                            android:id="@+id/personalinfo_address_dir"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/loaction_icon"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+                <ImageView
+                    android:id="@+id/personalinfo_companyinfo_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/house"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/personalinfo_companyinfo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/personalinfo_companyinfo_icon"
+                    android:text="公司介绍"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:id="@+id/lr_isopen"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/tv_is_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="展开"
+                        android:layout_centerVertical="true"/>
+                    <ImageButton
+                        android:id="@+id/ib_isopen"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/down_arrow"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:background="@drawable/corners_bg"
+                android:layout_height="211dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/personalinfo_companyinfo_image_a"
+                android:layout_width="match_parent"
+
+
+
+                android:layout_height="match_parent"
+                fresco:placeholderImage="@drawable/personalinfo_companyinfo_image_a"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:actualImageScaleType="fitXY" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_margin="3dp"
+                android:background="@drawable/my_dialog_bg"
+                android:id="@+id/personalinfo_companyinfo_image_b"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                fresco:actualImageScaleType="fitXY" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@drawable/my_dialog_bg"
+                android:id="@+id/personalinfo_companyinfo_image_c"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                fresco:actualImageScaleType="fitXY"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@drawable/my_dialog_bg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                fresco:placeholderImage="@drawable/personalinfo_companyinfo_image_e"
+                fresco:placeholderImageScaleType="fitXY"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

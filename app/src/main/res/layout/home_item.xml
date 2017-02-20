@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_content_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/home_content_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/home_content_yixiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/home_content_image"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#ABCDEF"/>
+
+    <TextView
+        android:id="@+id/home_content_if_applied"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:background="@drawable/home_textview_bg"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="已报名"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="@dimen/fonta"/>
+    
+    <TextView
+        android:id="@+id/home_content_applied_number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:text="人数100人"
+        android:textSize="@dimen/fonta"/>
+    
+    
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/home_item_people"
+        android:layout_alignTop="@id/home_content_applied_number"
+        android:layout_toLeftOf="@id/home_content_applied_number"
+        android:layout_marginLeft="2dp"
+        />
+    
+    <TextView
+        android:id="@+id/home_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:padding="10dp"
+        android:layout_below="@id/home_content_image"
+        android:textSize="@dimen/fontc"/>
+
+    <ImageView
+        android:id="@+id/home_content_clock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/home_item_clock"
+        android:layout_below="@id/home_content_title"
+        android:layout_marginLeft="10dp"/>
+    
+    <TextView
+        android:id="@+id/home_content_date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="2016年即将过去了"
+        android:textSize="@dimen/fonta"
+        android:gravity="center|left"
+        android:layout_alignTop="@id/home_content_clock"
+        android:layout_toRightOf="@id/home_content_clock"
+        android:layout_marginLeft="6dp"/>
+
+    <ImageView
+        android:id="@+id/home_content_location"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/home_item_location"
+        android:layout_below="@id/home_content_clock"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="11dp"/>
+
+    <TextView
+        android:id="@+id/home_content_address"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="这里是美丽的杭州"
+        android:textSize="@dimen/fonta"
+        android:gravity="center|left"
+        android:layout_alignTop="@id/home_content_location"
+        android:layout_toRightOf="@id/home_content_location"
+        android:layout_marginLeft="6dp"/>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#DDDDDD"
+        android:layout_below="@id/home_content_address"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

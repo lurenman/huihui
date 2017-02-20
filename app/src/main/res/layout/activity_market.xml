@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_market"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Personal.MarketActivity">
+
+    <RelativeLayout
+        android:id="@+id/market_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include layout="@layout/c_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="商城"
+            android:textSize="@dimen/fontd"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/c_blackline" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scencedetail_card_search"
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/market_title"
+        android:background="@drawable/search_edittext_bg">
+
+        <ImageView
+            android:id="@+id/search_image"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/search_image"
+            android:background="@null"
+            android:gravity="start"
+            android:textCursorDrawable="@null"
+            android:inputType="none"
+            android:maxLines="1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

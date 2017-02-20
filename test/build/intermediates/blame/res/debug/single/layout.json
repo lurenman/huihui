@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "G:\\Android\\AndroidStudioProjects\\huihui\\test\\build\\intermediates\\res\\merged\\debug\\layout\\activity_listview.xml",
+        "source": "G:\\Android\\AndroidStudioProjects\\huihui\\test\\src\\main\\res\\layout\\activity_listview.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidStudioProjects\\TimelineText\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_listview.xml",
+        "source": "G:\\Android\\AndroidStudioProjects\\TimelineText\\app\\src\\main\\res\\layout\\activity_listview.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidStudioProjects\\TimelineText\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_item.xml",
+        "source": "G:\\Android\\AndroidStudioProjects\\TimelineText\\app\\src\\main\\res\\layout\\listview_item.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidStudioProjects\\huihui\\test\\build\\intermediates\\res\\merged\\debug\\layout\\listview_item.xml",
+        "source": "G:\\Android\\AndroidStudioProjects\\huihui\\test\\src\\main\\res\\layout\\listview_item.xml"
+    }
+]

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Payment.ChoiceticketActivity">
+
+    <RelativeLayout
+        android:id="@+id/choiceticket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/c_back" />
+
+        <TextView
+            style="@style/titletext"
+            android:text="生成订单" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choiceticket_feet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#AEAEAE" />
+
+        <RelativeLayout
+            android:id="@+id/choiceticket_feet_collect"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true">
+
+
+            <ImageView
+                android:id="@+id/choiceticket_feet_collect_image"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:src="@drawable/collect_a" />
+
+            <TextView
+                android:id="@+id/choiceticket_feet_collect_text"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="收藏"
+                android:textSize="@dimen/fontd" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/choiceticket_feet_pay"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/appColor"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fontd" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choiceticket_feet"
+        android:layout_below="@id/choiceticket">
+
+        <LinearLayout
+            android:id="@+id/choiceticket_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/choiceticket_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#0099FF" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.VideoActivity">
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BB000000"/>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/home_item_videopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:background="#0099FF">
+
+        <com.hui2020.huihui.VideoPlayer.view.SuperVideoPlayer
+            android:id="@+id/video_player_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+        </com.hui2020.huihui.VideoPlayer.view.SuperVideoPlayer>
+
+    </RelativeLayout>
+</RelativeLayout>

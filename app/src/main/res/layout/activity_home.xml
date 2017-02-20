@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Home.HomeActivity">
+
+    <include
+        android:id="@+id/app_feet"
+        layout="@layout/c_feet" />
+
+    <RelativeLayout
+        android:id="@+id/home_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_head_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/home_head_location_text"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/home_head_location"
+            android:gravity="center|left"
+            android:text="哈哈哈哈"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fontc" />
+
+        <ImageView
+            android:id="@+id/home_head_scan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/scan" />
+
+        <RelativeLayout
+            android:id="@+id/home_search"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/home_head_scan"
+            android:layout_toRightOf="@id/home_head_location_text"
+            android:background="@drawable/search_edittext_bg">
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/search_image"
+                android:background="@null"
+                android:gravity="start"
+                android:textCursorDrawable="@null"
+                android:inputType="none"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/c_blackline" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_nav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/home_head"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/home_nav_plus"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="22dp" />
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/home_nav_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/home_nav_plus"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/home_nav_lin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_nav_lin_tj"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="推荐"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_it"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="IT"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_jr"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="金融"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_jy"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="教育"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_yl"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="医疗"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_cy"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="创业"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_mr"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="美容"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_sh"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="商会"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/home_nav_lin_hg"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="化工"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_ny"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="农业"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_gy"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="工业"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_wl"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="物流"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_dc"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="地产"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_wt"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="文体"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_qt"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textSize="@dimen/fontc" />
+                <TextView
+                    android:id="@+id/home_nav_lin_jx"
+                    android:layout_width="@dimen/navbuttonSize"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="精选"
+                    android:textSize="@dimen/fontc" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+
+    <com.hui2020.huihui.Home.RefreshableLayout.PullToRefreshLayout
+        android:id="@+id/home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/app_feet"
+
+        android:layout_below="@+id/home_nav">
+
+        <include layout="@layout/refresh_refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.hui2020.huihui.Home.RefreshableLayout.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.hui2020.huihui.Home.SlideShowView.SlideShowView
+                    android:layout_width="match_parent"
+                    android:layout_height="163dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/home_content_side">
+
+                </com.hui2020.huihui.Home.SlideShowView.SlideShowView>
+
+                <LinearLayout
+                    android:id="@+id/home_content_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.hui2020.huihui.Home.RefreshableLayout.PullableScrollView>
+
+        <include layout="@layout/refresh_load_more" />
+
+    </com.hui2020.huihui.Home.RefreshableLayout.PullToRefreshLayout>
+
+</RelativeLayout>

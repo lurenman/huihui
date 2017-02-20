@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:id="@+id/card_item_card_card.xml"
+    android:layout_height="85dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/card_item_card_card_image"
+            android:layout_width="67dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            fresco:actualImageScaleType="fitXY"
+            fresco:roundedCornerRadius="5dp"
+            android:layout_height="67dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_item_card_card_name"
+            android:layout_toRightOf="@id/card_item_card_card_image"
+            android:layout_marginLeft="12dp"
+            android:layout_alignTop="@id/card_item_card_card_image"
+            android:layout_marginTop="4dp"
+            android:text="管理员"
+            android:textColor="#666666"
+            android:textSize="@dimen/fontc"/>
+
+        <TextView
+            android:id="@+id/card_item_card_card_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fonta"
+            android:textColor="#0099FF"
+            android:layout_toRightOf="@id/card_item_card_card_name"
+            android:layout_alignBottom="@id/card_item_card_card_name"
+            android:text=" CEO"/>
+
+        <TextView
+            android:id="@+id/card_item_card_card_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontb"
+            android:text="公司：宇宙管理委员会"
+            android:textColor="#666666"
+            android:layout_below="@id/card_item_card_card_name"
+            android:layout_alignLeft="@id/card_item_card_card_name"
+            android:layout_marginTop="6dp" />
+        <TextView
+            android:id="@+id/card_item_card_card_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontb"
+            android:text="电话：18888888888"
+            android:textColor="#666666"
+            android:layout_below="@id/card_item_card_card_company"
+            android:layout_alignLeft="@id/card_item_card_card_company"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4"/>
+</RelativeLayout>

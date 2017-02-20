@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chooseimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.ChooseimageActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/chooseimage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+        <include
+            android:id="@+id/back"
+            layout="@layout/c_back" />
+        <TextView
+            style="@style/titletext"
+            android:text="选择图片上传" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/chooseimage_fromlocal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="@dimen/fontb"
+        android:gravity="center"
+        android:text="本地图库"/>
+    <include layout="@layout/c_blackline"/>
+    <TextView
+        android:id="@+id/chooseimage_fromcamera"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="@dimen/fontb"
+        android:gravity="center"
+        android:text="拍照选取"/>
+    <include layout="@layout/c_blackline"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="@dimen/fontb"
+        android:gravity="center"
+        android:text="预览"/>
+    <ImageView
+        android:id="@+id/chooseimage_preview"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/chooseimage_confirme"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:text="确认上传"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="@dimen/fontd"
+        android:background="@drawable/textview_bg_b"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

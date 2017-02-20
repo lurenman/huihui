@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hui2020.huihui.Personal.PersonalActivity">
+
+    <include
+        android:id="@+id/app_feet"
+        layout="@layout/c_feet" />
+
+    <RelativeLayout
+        android:id="@+id/personal_banner"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_alignParentTop="true"
+        android:padding="12dp"
+        android:background="@color/appComponentColor">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/personal_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp" />
+        <TextView
+            android:id="@+id/personal_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理员"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="@dimen/fontb"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/personal_icon"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:id="@+id/personal_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分+10086"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="@dimen/fontb"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/personal_username"
+            android:layout_marginTop="8dp"/>
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/personal_qrcpde"/>-->
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/app_feet"
+    android:layout_below="@id/personal_banner">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/personal_card"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_card_a"
+                style="@style/icon"
+                android:src="@drawable/personal_card" />
+
+            <TextView
+                android:id="@+id/personal_card_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_card_a"
+                android:text="我的名片" />
+
+            <ImageView
+                android:id="@+id/personal_card_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_assistance"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_assistance_a"
+                style="@style/icon"
+                android:src="@drawable/personal_note_assistance" />
+
+            <TextView
+                android:id="@+id/personal_assistance_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_assistance_a"
+                android:text="我的助手" />
+
+            <ImageView
+                android:id="@+id/personal_assistance_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_note"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_note_a"
+                style="@style/icon"
+                android:src="@drawable/personal_note" />
+
+            <TextView
+                android:id="@+id/personal_note_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_note_a"
+                android:text="我的笔记" />
+
+            <ImageView
+                android:id="@+id/personal_note_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_warehouse_a"
+                style="@style/icon"
+                android:src="@drawable/personal_warehouse" />
+
+            <TextView
+                android:id="@+id/personal_warehouse_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_warehouse_a"
+                android:text="我的智库" />
+
+            <ImageView
+                android:id="@+id/personal_warehouse_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_order"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_order_a"
+                style="@style/icon"
+                android:src="@drawable/personal_order" />
+
+            <TextView
+                android:id="@+id/personal_order_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_order_a"
+                android:text="我的订单" />
+
+            <ImageView
+                android:id="@+id/personal_order_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/personal_market"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#FFFFFF">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/personal_market_a"-->
+                <!--style="@style/icon"-->
+                <!--android:src="@drawable/personal_market" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/personal_market_b"-->
+                <!--style="@style/cardtext"-->
+                <!--android:layout_toRightOf="@id/personal_market_a"-->
+                <!--android:text="会会商城" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/personal_market_c"-->
+                <!--style="@style/arraytoright"-->
+                <!--android:src="@drawable/go_g" />-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/personal_collect"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_collect_a"
+                style="@style/icon"
+                android:src="@drawable/personal_collect" />
+
+            <TextView
+                android:id="@+id/personal_collect_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_collect_a"
+                android:text="我的收藏" />
+
+            <ImageView
+                android:id="@+id/personal_collect_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/personal_setting"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/personal_setting_a"
+                style="@style/icon"
+                android:src="@drawable/personal_setting" />
+
+            <TextView
+                android:id="@+id/personal_setting_b"
+                style="@style/cardtext"
+                android:layout_toRightOf="@id/personal_setting_a"
+                android:text="设置" />
+
+            <ImageView
+                android:id="@+id/personal_setting_c"
+                style="@style/arraytoright"
+                android:src="@drawable/go_g" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

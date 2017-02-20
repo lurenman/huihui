@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_content_item"
+    android:layout_width="match_parent"
+    android:layout_height="122dp">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/home_item_image_a"
+        android:background="#0099FF"
+        android:layout_width="105dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_height="95dp" />
+
+    <TextView
+        android:id="@+id/home_item_title"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/home_item_image_a"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="红红火火恍恍惚惚哈哈哈哈哈哈哈哈"
+        android:textColor="#000000"
+        android:textSize="@dimen/fontc"
+        android:layout_width="210dp" />
+
+    <ImageView
+        android:id="@+id/home_item_clock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/home_item_clock"
+        android:layout_below="@id/home_item_title"
+        android:layout_alignLeft="@id/home_item_title"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/home_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="2016年即将过去了"
+        android:textSize="@dimen/fonta"
+        android:gravity="center|left"
+        android:textColor="#AEAEAE"
+        android:layout_alignTop="@id/home_item_clock"
+        android:layout_toRightOf="@id/home_item_clock"
+        android:layout_marginLeft="6dp"/>
+
+    <ImageView
+        android:id="@+id/home_item_location"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/home_item_location"
+        android:layout_below="@id/home_item_clock"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@id/home_item_title"/>
+
+    <TextView
+        android:id="@+id/home_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="这里是美丽的杭州"
+        android:textColor="#AEAEAE"
+        android:textSize="@dimen/fonta"
+        android:gravity="center|left"
+        android:layout_alignTop="@id/home_item_location"
+        android:layout_toRightOf="@id/home_item_location"
+        android:layout_marginLeft="6dp"/>
+
+    <TextView
+        android:id="@+id/home_item_view_number"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignTop="@id/home_item_address"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="人数100人"
+        android:textColor="#FF0033"
+        android:textSize="@dimen/fonta"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/home_item_view_number"
+        android:layout_alignTop="@id/home_item_view_number"
+        android:layout_toLeftOf="@id/home_item_view_number"
+        android:layout_marginRight="6dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/home_item_view_number"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEAEAE"/>
+
+
+
+</RelativeLayout>

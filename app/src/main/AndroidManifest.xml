@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hui2020.huihui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--  tools:replace="android:allowBackup" to replace all true to false??? -->
+    <application
+        android:name=".MyApplication"
+        tools:replace="android:allowBackup"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ihels0iPMpbSLv8fj53KiM6yumuGWcik" /> <!-- http://lbsyun.baidu.com/apiconsole/key -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Home.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MeetDetail.MeetingdetailActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".Location.LocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".Payment.PayActivity" />
+        <activity android:name=".Personal.PersonalActivity" />
+        <activity android:name=".MeetDetail.MeetingdetailTActivity" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Scence.ScenceActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Login.RegisteActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Login.ForgetActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".Personal.MarketActivity" />
+        <activity android:name=".Personal.Order.OrderActivity" />
+        <activity android:name=".Personal.Order.TicketActivity" />
+        <activity android:name=".Personal.PersonaleditActivity" />
+        <activity android:name=".Personal.Setting.SettingActivity" />
+        <activity android:name=".Personal.PersonalinfoActivity" />
+        <activity android:name=".Personal.Setting.SuggestionActivity" />
+        <activity android:name=".Personal.Setting.AboutusActivity" />
+        <activity android:name=".Scence.ScencedetailActivity" />
+        <activity android:name=".Card.CarddetailActivity" />
+        <activity android:name=".Card.CardActActivity" />
+        <activity android:name=".Payment.ChoiceticketActivity" />
+        <activity
+            android:name=".zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".Home.Scanimage" />
+        <activity
+            android:name=".VideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Payment.Pay_addnewActivity" />
+        <activity android:name=".Payment.PaymentActivity" />
+        <activity
+            android:name=".Card.CardActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".Personal.warehouse.WarehouseActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx535721802507c541" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Payment.Pay_addexistActivity" />
+        <activity android:name=".ChooseimageActivity"></activity>
+        <activity android:name=".Personal.Setting.HelpActivity"></activity>
+        <activity android:name=".Personal.BaidumapActivity"></activity>
+        <activity android:name=".Personal.Order.TicketDetialsActivity"></activity>
+        <activity android:name=".Personal.MoreContentActivity"></activity>
+        <activity android:name=".Card.NewFriendsActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_personaledit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hui2020.huihui.Personal.PersonaleditActivity">
+
+    <RelativeLayout
+        android:id="@+id/personaledit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/c_back" />
+
+        <TextView
+            style="@style/titletext"
+            android:text="个人信息修改" />
+
+        <TextView
+            android:id="@+id/personaledit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fontc" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/personaledit_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personaledit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/personaledit_icon"
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+
+                <TextView
+                    android:id="@+id/personaledit_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="头像"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/fontc" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/personaledit_icon_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#0066FF" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/personaledit_username"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="44dp"-->
+                <!--android:layout_marginTop="16dp">-->
+
+                <!--<include layout="@layout/c_blackline" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/personaledit_username_texta"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="13dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="用户名"-->
+                    <!--android:textSize="@dimen/fontc" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/personaledit_username_textb"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="未定义"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:textSize="@dimen/fontc" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<include layout="@layout/c_blackline" />-->
+
+            <RelativeLayout
+                android:id="@+id/personaledit_realname"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/personaledit_realname_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="姓名"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:id="@+id/personaledit_realname_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:textColor="#c3c3c3"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/personaledit_nickname_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="昵称"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:id="@+id/personaledit_nickname_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:textColor="#c3c3c3"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_gender"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_gender_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="性别"
+                    android:textSize="@dimen/fontc" />
+
+                <RadioGroup
+                    android:id="@+id/personaledit_gender_selecter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:textColor="#c3c3c3"
+                        android:id="@+id/personaledit_gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:textColor="#c3c3c3"
+                        android:id="@+id/personaledit_gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="女" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_birthday_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="生日"
+                    android:textSize="@dimen/fontc" />
+
+                <TextView
+                    android:id="@+id/personaledit_birthday_textb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textColor="#c3c3c3"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_company"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp">
+
+                <include layout="@layout/c_blackline" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_company_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="企业"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_company_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_job"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_job_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="职务"
+                    android:textSize="@dimen/fontc"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_job_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_website"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_website_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="网址"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_website_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_mobile_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="手机"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_mobile_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+            <RelativeLayout
+                android:id="@+id/personaledit_qq"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_qq_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="QQ"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_qq_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_address"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_address_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="地址"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_address_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+
+            <RelativeLayout
+                android:id="@+id/personaledit_email"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/personaledit_email_texta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="邮箱"
+                    android:textSize="@dimen/fontc" />
+
+                <EditText
+                    android:textColor="#c3c3c3"
+                    android:id="@+id/personaledit_email_textb"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="无"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/fontc" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_blackline" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="13dp"
+                android:text="公司介绍:"
+                android:gravity="center|left"
+                android:textSize="@dimen/fontc"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="211dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+
+                android:id="@+id/personaledit_companyinfo_image_a"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                fresco:actualImageScaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/iv_add1"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/add_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+        </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="211dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/personaledit_companyinfo_image_b"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                fresco:actualImageScaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/iv_add2"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/add_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="211dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/personaledit_companyinfo_image_c"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                fresco:actualImageScaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/iv_add3"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/add_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--<org.feezu.liuli.timeselector.view.PickerView-->
+        <!--android:id="@+id/personaledit_timeselecter"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="160dp"-->
+        <!--app:isLoop="false" -->
+        <!--android:layout_alignParentBottom="true"/>-->
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appColor">
+
+        <include layout="@layout/c_back"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="帮助"
+            android:textSize="@dimen/fontd"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="一、会会是一个什么样的平台？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="会会（杭州会会科技有限公司）是一家专业商务会议查询、报名
+票务营销平台，为主办方免费提供免费活动发布、会议营销推广
+、会议现场互动、会议舆情报告、会议嘉宾邀约等服务的会议的营销第三方平台。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="二、会会平台内的参会情况怎么样？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="会会平台内每天有7000档以上的会议活动上架、超过120万的日会议。主办方会员20万+、参会者会员900万+，微信服务号“会会科技”粉丝30万+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="三、我是会议参会人，通过会会可以得到什么？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="1.免费付费优质活动，便捷的报名，安全的缴款;
+2.你可以结实到数百位不同领域的企业家、商业精英，扩宽人脉资源；
+3把握最前沿的经济局势；为投资决策提供高价值参考"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="四、我是会议主办方，会会能为我们做什么？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="1.如果你是会议主办方，会会将提供免费发布活动、多元化推广2.线上线下收款，报名资讯等统一系列服务；"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="五、用会会参会麻烦吗？都有什么流程？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="1.完成参会者报名、购票、支付随时了解会议信息和相应流程；
+2.推荐选择签到方式：
+（1）app签到---签到入场
+（2）无app人员签到---收参会证---后台将参会码录入---签到入场
+3.会议活动中科技感互动产品
+（1）节目打赏；
+（2）抽奖；（滚动、摇一摇抽奖）
+（3）3D互动墙（球形、三维、立体、企业logo不断变化）"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="六、我是会展服务公司，会会能够为我们带来怎么样的发展机遇？"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/textcolor_dark"
+            android:layout_marginTop="10dp"
+            android:text="欢迎各类会展服务型企业和个人加盟会会，在这里你能得到你想得到的；
+1.低投入，高回报、空间无限的事业发展，成就你的创业梦想；
+2.率先拥有紧跟时代的“互联网+万众创新”全新创业模式创富系统；
+3.消费者自营销，服务商低成本优服务的全民新时代，共同为您的事业保驾护航
+4.与具有十年发展历程的移动互联网公司为盟，共享共荣"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
